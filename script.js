@@ -2,19 +2,19 @@
 $( function() {
 
   $( '#buttonHeader' ).click( function() {
-    $( 'h1' ).text( 'Hello jQuery!' );
+    $( 'h1' ).text( 'Hello World!' );
   });
 
   $( '#buttonArticle' ).click( function() {
     $( 'article' ).css({
-      'color': 'white',
-      'background-color': 'red'
+      'color': 'black',
+      'background-color': 'blue'
     });
   });
 
   $( '#buttonFooter' ).click( function() {
-    $( 'footer' ).html('<p><a href="https://www.kyusan-u.ac.jp">Kyushu Sangyo University</a></p>' );
-    $( 'footer a' ).css( 'color','red' );
+    $( 'footer' ).html('<p><a href="https://www.kyusan-u.ac.jp">zoukei tanki university</a></p>' );
+    $( 'footer a' ).css( 'color','white' );
   });
 
 });
@@ -34,6 +34,9 @@ $( function() {
     $('main').css( 'flex-direction','column' );
   });
 
+  $( '#buttonUpdown' ).click( function() {
+    $('main').css( 'flex-direction','column-reverse' );
+  });
 
 
 });
